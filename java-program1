@@ -1,0 +1,16 @@
+class Student {
+    String name;
+
+    Student() {      // Constructor
+        name = "Yashu";
+    }
+
+    void display() {
+        System.out.println(name);
+    }
+
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.display();
+    }
+}
