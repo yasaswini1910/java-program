@@ -1,0 +1,36 @@
+class C1{
+    public void details(){
+        System.out.println("he is a cricket player");
+    }
+
+}
+interface I1{
+    public void runs();
+    public void wickets();
+}
+interface I2{
+    public void strikerate();
+}
+class C2 extends C1 implements I1,I2{
+    @Override
+    public void runs(){
+        System.out.println("he scored 2500 runs");
+    }
+    public void wickets(){
+          System.out.println("he taken 29 wickets");
+    }
+    @Override
+    public void strikerate(){
+        system.out.println(" strike rate is 153.45");
+    }
+}
+public class ExtendsAndImplements {
+    public static void main(String[] args) {
+        C2 tv=new C2();
+        tv.details();
+        tv.runs();
+        tv.wickets();
+        tv.strikerate();
+    }
+    
+}c
