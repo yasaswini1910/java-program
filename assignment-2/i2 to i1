@@ -1,0 +1,19 @@
+interface I1{
+    int score=252;
+public void country();
+}
+ interface I2 extends I1{
+    @Override
+    public void country(){
+        system.out.println("india scored:"+score)
+    }
+
+ }
+class InterfaceExtendsInterface{
+    public static void main(String args[]){
+        I2 tv=new I2();
+    tv.country();
+
+    }
+
+}
