@@ -1,0 +1,33 @@
+package inheritance;
+
+
+
+interface I1 {
+	int x = 1;
+	void demo();
+}
+interface I2{
+	int y = 2;
+	void sample();
+}
+class C1 implements I1,I2{
+	public void demo() {
+		System.out.println("this is from I1");
+	}
+	public void sample() {
+		System.out.println("this is from I2");
+	}
+	void method() {
+		System.out.println("this is method from C1");
+	}
+}
+public class ImplementMultipleInheritance {
+   public static void main(String[] args) {
+	   C1 c1 = new C1();
+	   System.out.println(I1.x);
+	   System.out.println(I2.y); 
+	   c1.demo();
+	   c1.sample();
+	   c1.method();
+}
+}
